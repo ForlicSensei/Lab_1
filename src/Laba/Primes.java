@@ -3,7 +3,7 @@ package Laba;
 public class Primes {
     public static void main(String[] args) {
         for (int i=0; i != 100; i++){//Цикл с числами на проверку
-            if (isPrimes(i) == true){
+            if (isPrimes(i)) {
                 System.out.println(i);
             }
         }
