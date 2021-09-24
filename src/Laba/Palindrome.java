@@ -4,7 +4,6 @@ public class Palindrome {
     public static void main(String[] args) {
         for (int i = 0; i < args.length; i++) {
             String s = args[i];
-            System.out.print(reverseString(s));
             System.out.println(s + " " + isPalindrome(s));
         }
     }
@@ -13,7 +12,7 @@ public class Palindrome {
 
     }
     public static boolean isPalindrome(String s){//Сравнение с преведущим
-       String s1= String.valueOf(new StringBuilder(s).reverse());
+       String s1 = reverseString(s);
        return s1.equals(s);
     }
 }
