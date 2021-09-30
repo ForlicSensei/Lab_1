@@ -13,6 +13,6 @@ public class Palindrome {
     }
     public static boolean isPalindrome(String s){//Сравнение с преведущим
        String s1 = reverseString(s);
-       return s1.equals(s);
+       return s1.toLowerCase().equals(s.toLowerCase());
     }
 }
